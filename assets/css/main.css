@@ -453,9 +453,7 @@ h6 {
     margin: 0;
     border-radius: 0;
     background-color: var(--nav-mobile-background-color);
-    border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    overflow-y: auto;
-    z-index: 9998;
+
     /*-------------------------------*/
     visibility: hidden;
     transform: translateX(100%);
@@ -487,7 +485,7 @@ h6 {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+    background-color:  var(--accent-color);
   }
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
@@ -517,16 +515,12 @@ h6 {
     visibility: visible;
     transform: none;
   }
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
+  .navmenu .dropdown ul ul {background-color: rgba(33, 37, 41, 0.1);}
   .navmenu .dropdown>.dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
-  .mobile-nav-active {
-    overflow: hidden;
-  }
+  .mobile-nav-active {overflow: hidden;}
   .mobile-nav-active .mobile-nav-toggle {
     color:var(--accent-color);
     position: fixed;
